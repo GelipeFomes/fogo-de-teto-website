@@ -1,0 +1,97 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    
+}
+#middle-youtube
+{
+    width: 100vw;
+    background-color: #404040;
+    border-top: blueviolet 1px solid;
+    border-bottom: blueviolet 1px solid;
+}
+#youtube
+{
+    width: 4.8rem;
+    height: 4.8rem;
+}
+#github
+{
+    width: 8rem;
+    height: 4.5rem;
+}
+#banner
+{   
+    margin:auto;
+    display: block;
+    height:100vh;
+}
+#title
+{
+    border-top: blueviolet 1px solid;
+    border-bottom: blueviolet 1px solid;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    display: inline-block;    
+    background-color: #404040;
+}
+#fogo-de-teto
+{
+    padding-left: 2.5vh;
+    width: 5vw;    
+}
+#fogo-de-teto:hover
+{
+    padding-left: 2.5vh;
+    background-color:#2b2b2b;    
+}
+#menu-sim
+{   
+    padding-right: 2.5vh;
+    width: 5.5vw;
+    float: right;
+}
+#menu-sim:hover
+{   
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    background-color:#2b2b2b ;
+    width: 5.5vw;
+    float: right;
+    
+}
+#menu-page
+{   
+    margin: auto;
+    display: block;
+    width: 50vw;
+}
+#logo
+{   
+    padding-top: 2.5vh;
+    position: fixed;
+    margin-left:35vw;
+    width: 20vw;
+    height: auto;
+    
+}
+#second-menu
+{
+    width: 100vw;
+    height: 20vh;
+    background-color: #404040;
+    border-top: blueviolet 1px solid;
+    border-bottom: blueviolet 1px solid;
+}
+#some-space
+{
+    width: 100vw;
+    height: 120vh;
+}
