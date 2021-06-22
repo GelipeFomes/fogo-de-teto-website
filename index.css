@@ -1,97 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
 *
 {
     margin: 0px;
     padding: 0px;
 }
+
 body
 {
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
     
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    overflow-x: hidden;
 }
-#middle-youtube
+
+/* -------------------Header-------------------  */
+header
 {
-    width: 100vw;
-    background-color: #404040;
-    border-top: blueviolet 1px solid;
-    border-bottom: blueviolet 1px solid;
-}
-#youtube
-{
-    width: 4.8rem;
-    height: 4.8rem;
-}
-#github
-{
-    width: 8rem;
-    height: 4.5rem;
-}
-#banner
-{   
-    margin:auto;
-    display: block;
-    height:100vh;
-}
-#title
-{
-    border-top: blueviolet 1px solid;
-    border-bottom: blueviolet 1px solid;
-    width: 100vw;
-    height: auto;
-    position: fixed;
-    display: inline-block;    
-    background-color: #404040;
-}
-#fogo-de-teto
-{
-    padding-left: 2.5vh;
-    width: 5vw;    
-}
-#fogo-de-teto:hover
-{
-    padding-left: 2.5vh;
-    background-color:#2b2b2b;    
-}
-#menu-sim
-{   
-    padding-right: 2.5vh;
-    width: 5.5vw;
-    float: right;
-}
-#menu-sim:hover
-{   
-    padding-left: 2.5vh;
-    padding-right: 2.5vh;
-    background-color:#2b2b2b ;
-    width: 5.5vw;
-    float: right;
+    top: 0px;
+    width: 100%;
+    height: 5rem;
     
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+    background-color: #404040;
+    border-bottom: 1px #8a2be2 solid;
 }
-#menu-page
+
+header #logo
+{
+    left: 2rem;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: center;
+    text-decoration: none
+}
+
+header #logo img
+{
+    padding-left: 1%;
+    padding-top: 0.2%;
+    height: 90%;
+}
+
+header #logo h3
+{
+    font-family: "Roboto", sans-serif;
+    margin-left: 1.4rem;
+    padding-top: 1.2rem;
+    
+
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header #logo h3:hover 
 {   
+    opacity: 50%;
+}
+
+header #menu
+{
+    height: 100%;
+    text-decoration: none;
+}
+
+header #menu p
+{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+    padding-top: 1.2rem;
+    margin-right: 1rem;
+}
+
+header #menu p:hover
+{
+    opacity: 50%;
+}
+
+header #menu p:active
+{
+    color: #8a2be2;
+}
+/* -------------------Banner------------------- */
+
+/* -------------------Main------------------- */
+main
+{
+    padding: 10rem;
+}
+
+main div
+{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     margin: auto;
-    display: block;
-    width: 50vw;
-}
-#logo
-{   
-    padding-top: 2.5vh;
-    position: fixed;
-    margin-left:35vw;
-    width: 20vw;
-    height: auto;
+    margin-bottom: 1%;
     
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.4) 1px 1px 1px 1px;
 }
-#second-menu
+
+main div p
 {
-    width: 100vw;
-    height: 20vh;
+    max-width: 50%;
+    max-height: 80%;
+    padding: 5%;
+    color:black;
+    justify-content: center;
+    text-align: left;
+}
+main div img
+{
+    max-width: 20%;
+}
+
+/* -------------------Footer------------------- */
+footer
+{
+    bottom: 0px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    height: 4rem;
     background-color: #404040;
-    border-top: blueviolet 1px solid;
-    border-bottom: blueviolet 1px solid;
+    border-top: solid 1px #8a2be2;
 }
-#some-space
+
+footer a
 {
-    width: 100vw;
-    height: 120vh;
+    width: 50%;
+    padding-top: 1rem;
+    text-align: center;
+
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    text-decoration: none;
+}
+
+footer a i
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+footer a i:hover
+{
+    opacity: 50%;
+}
+
+footer a i:active
+{
+    color:#8a2be2;
 }
