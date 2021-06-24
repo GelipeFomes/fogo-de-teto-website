@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
-
 *
 {
     margin: 0px;
@@ -9,18 +8,13 @@
 body
 {
     width: 100vw;
-    height: 140vh;
+    height: 150vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
     
-    background-image: url("");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
     overflow-x: hidden;
 }
 
@@ -30,6 +24,7 @@ header
     top: 0px;
     width: 100%;
     height: 5rem;
+    z-index: 999;
     
     position: absolute;
     display: flex;
@@ -66,7 +61,6 @@ header #logo h3
     margin-left: 1.4rem;
     padding-top: 1.2rem;
     
-
     font-size: 2rem;
     color: #FFFFFF;
     text-decoration: none;
@@ -108,43 +102,132 @@ header #menu p:active
 /* -------------------Main------------------- */
 main
 {
-    padding: 10rem;
-}
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px;
 
-main div
-{
-    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: auto;
+
+    top: 7rem;
+    margin-bottom: 1rem;
+}
+
+main .product-item
+{   
+    margin-left: 2.5%;
+    width: 95%;
+    height: 18rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
     margin-bottom: 1%;
     
-    background-color: #FFFFFF;
-    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
     box-shadow: rgba(0,0,0,0.4) 1px 1px 1px 1px;
 }
 
-main div p
+main .product-item #product-description
 {
-    max-width: 50%;
-    max-height: 80%;
-    padding: 5%;
-    color:black;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: left;
+    text-align: center;
+
+    margin-left: 1.5rem;
+    max-width: 75%;
+    height: 100%;
 }
-main div img
+
+main .product-item #product-description h1
 {
-    max-width: 20%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5rem;
+
+    text-decoration: bold;
+    color: #404040;
+}
+
+main .product-item #product-description p
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+main .product-item #img-button
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 4%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+main .product-item #img-button img
+{
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    max-width: 10rem;
+    max-height: 10rem;
+
+    border-radius: 10px;
+}
+
+main .product-item #img-button #more-info-button 
+{
+    max-width: 10rem;
+    height: 3rem;
+    padding-top: 1rem;
+
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    right: 0px;
+
+    background-color: #ffa500;
+    border-radius: 10px;
+    
+    transition: 0.2s;
+}
+
+main .product-item #img-button #more-info-button a
+{
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    left: 0px;
+}
+
+main .product-item #img-button #more-info-button a i
+{
+    width: 100%;
+    height: 100%;
+}
+
+main .product-item #img-button #more-info-button:hover 
+{
+    background-color: #d48b02;
 }
 
 /* -------------------Footer------------------- */
 footer
 {
-    bottom: 0px;
+    position: absolute;
     width: 100%;
+    top: 150vh;
+    bottom: 0px;
 
     display: flex;
     justify-content: space-between;
@@ -152,6 +235,7 @@ footer
     height: 4rem;
     background-color: #404040;
     border-top: solid 1px #8a2be2;
+    border-bottom: solid 1px #8a2be2;
 }
 
 footer a
