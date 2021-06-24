@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
-
 *
 {
     margin: 0px;
@@ -14,7 +13,7 @@ html
 body
 {
     width: 100vw;
-    height: auto;
+    height: 150vh;
 
     display: flex;
     flex-direction: column;
@@ -260,10 +259,12 @@ main .product-item #img-button #more-info-button:hover
 
 /* -------------------Footer------------------- */
 footer
-{   
-    position: fixed;
+{
+    position: absolute;
     width: 100%;
-    
+    top: 150vh;
+    bottom: 0px;
+
     display: flex;
     justify-content: space-between;
 
