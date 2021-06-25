@@ -9,8 +9,21 @@
         <link rel="stylesheet" href="./style/index.css">
         <link rel="stylesheet" href="./style/product.css">
         <link rel="shortcut icon" href="./res/panela icon.png">
+        <script src = "./src/index.js"></script>
     </head>
-    <body>
+    <body onload = "getMenu()">
+        <div id = "menu">
+            <li>
+                <div id = "menu-button" onclick = "toggleMenu()">
+                    <i class="fas fa-angle-double-left"></i>
+                </div>
+                <ul><a href="index.html">Home</a></ul>
+                <ul>Carlos II</ul>
+                <ul>Carlos III</ul>
+                <ul><a href="product1.html">Carlos IV</a></ul>
+                
+            </li>
+        </div>
         <header>
             <a id = "logo" href="index.html">
                 <img  src="./res/panela.png" alt="pan">
@@ -37,7 +50,7 @@
             </div>
             <div>
                 <a href="https://github.com/GelipeFomes">GelipeFomes <i class="fab fa-github"></i></a>
-                <a href="https://j0suetm.github.io/">J0suetm</i></a>
+                <a href="https://j0suetm.github.io/">J0sueTM</i></a>
             </div>           
         </main>
         

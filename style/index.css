@@ -23,6 +23,141 @@ body
     overflow-x: hidden;
 }
 
+/* -------------------Menu-------------------  */
+#menu div
+{
+    position: fixed;
+    width: 1.8rem;
+    height: 3rem;
+    z-index: 1000;
+
+    right: -0.1rem;
+    top: calc(50vh - 4.3rem);
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5rem;
+    
+    background-color: rgba(0,0,0,0.2);
+    border: black 1px solid;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    transition: 0.3s;
+}
+
+#menu div:hover
+{
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+#menu i
+{
+    font-size: 1.5rem;
+    color: black;
+}
+
+#menu
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+
+    left: 100vw;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+#menu li
+{
+    text-align: left;
+    text-decoration: none;
+    background-color: rgba(38, 38, 38, 0.4);
+    list-style: none;
+    text-align: center;
+    margin-right: 1px solid black;
+    border-left: #8a2be2 1px solid;
+}
+
+#menu li ul 
+{   
+    cursor: pointer;
+    
+    width: 10rem;
+    height: 2rem;
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+
+    margin-top: 3rem;
+    transition: 0.4s;
+}
+
+#menu li ul:hover
+{
+    background-color: rgba(38, 38, 38, 0.6);
+}
+
+#menu li ul a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes openMenu
+{
+    from
+    {
+        left: 100vw;
+    }
+    to
+    {
+        left: calc(100vw - 14.8rem);
+    }
+}
+
+@keyframes closeMenu
+{
+    from
+    {
+        left: calc(100vw - 14.8rem);
+    }
+    to
+    {
+        left: 100vw;
+    }
+}
+
+@keyframes openMenuButton
+{
+    from
+    {
+        right: -0.1rem;
+    }
+    to
+    {
+        right: 14rem;
+    }
+}
+
+@keyframes closeMenuButton
+{
+    from
+    {
+        right: 14rem;
+    }
+    to
+    {
+        right: -0.1rem;
+    }
+}
+
 /* -------------------Header-------------------  */
 header
 {
@@ -77,32 +212,6 @@ header #logo h3:hover
     opacity: 50%;
 }
 
-header #menu
-{
-    height: 100%;
-    text-decoration: none;
-}
-
-header #menu p
-{
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-family: "Roboto", sans-serif;
-    transition: 0.5s;
-    padding-top: 1.2rem;
-    margin-right: 1rem;
-}
-
-header #menu p:hover
-{
-    opacity: 50%;
-}
-
-header #menu p:active
-{
-    color: #8a2be2;
-}
-
 /* -------------------Banner------------------- */
 main #banner
 {
@@ -144,7 +253,6 @@ main
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 
     top: 7rem;
     margin-bottom: 1rem;
@@ -266,6 +374,7 @@ footer
     position: fixed;
     width: 100%;
     bottom: 0px;
+    z-index: 2000;
 
     display: flex;
     justify-content: space-between;
@@ -349,12 +458,14 @@ footer a i:active
     {
         padding-left: 0px;
         padding-right: 0px;
+        justify-content: center;
     }
 
     main .product-item #img-button img
     {
         margin-top: 1rem;
         margin-left: calc(50% - 5rem);
+        margin-bottom: 1.4rem;
     }
 
     main .product-item #img-button #more-info-button
