@@ -1,0 +1,101 @@
+#main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 90vw;
+    height: 200vh;
+    margin-left: 5%;
+
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+#main img
+{   
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    
+    border-radius: 10px;
+}
+
+#main #white-background
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 80vw;
+    height: 100vh;
+    margin-left: 5vw;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+
+#main #white-background h1
+{   
+    display: block;
+    margin: auto;
+    max-width: 20%;
+
+    text-align: center;
+    font-size: 3rem;
+
+    border-bottom: 1px solid black;
+}
+
+#main #white-background p
+{   
+    display: block;
+    margin: auto;
+    max-width: 60vw;
+
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#main div
+{
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+#main div a
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 15vw;
+    height: 15vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+
+    background-color: #ffa500;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#main div a:hover
+{
+    opacity: 60%;
+}
+
+

@@ -56,7 +56,7 @@ header #logo
 header #logo img
 {
     padding-left: 1%;
-    padding-top: 0.2%;
+    padding-top: 0.2;
     height: 90%;
 }
 
@@ -102,7 +102,6 @@ header #menu p:active
 {
     color: #8a2be2;
 }
-/* -------------------Menu------------------- */ 
 
 /* -------------------Banner------------------- */
 main #banner
@@ -153,19 +152,24 @@ main
 
 main .product-item
 {   
-    margin-left: 2.5%;
-    width: 95%;
+    margin-left: calc((100% - 60rem) / 2);
+    max-width: 60rem;;
     height: 18rem;
 
     display: flex;
     flex-direction: row;
     justify-content: left;
 
-    margin-bottom: 1%;
+    margin-bottom: 1rem;
     
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.4) 1px 1px 1px 1px;
+}
+
+main #last-product
+{
+    margin-bottom: 5.8rem;
 }
 
 main .product-item #product-description
@@ -227,7 +231,6 @@ main .product-item #img-button #more-info-button
 
     margin-bottom: 1rem;
     margin-left: 1.5rem;
-    right: 0px;
 
     background-color: #ffa500;
     border-radius: 10px;
@@ -260,9 +263,8 @@ main .product-item #img-button #more-info-button:hover
 /* -------------------Footer------------------- */
 footer
 {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 150vh;
     bottom: 0px;
 
     display: flex;
@@ -271,7 +273,6 @@ footer
     height: 4rem;
     background-color: #404040;
     border-top: solid 1px #8a2be2;
-    border-bottom: solid 1px #8a2be2;
 }
 
 footer a
@@ -306,4 +307,59 @@ footer a i:hover
 footer a i:active
 {
     color:#8a2be2;
+}
+
+/* -------------------Mobile------------------- */
+@media only screen and (max-width: 990px)
+{
+    main #banner img
+    {
+        margin-bottom: 1rem;
+    }
+
+    main #banner a
+    {
+        position: fixed;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    main .product-item
+    {
+        margin-left: 5vw;
+        max-width: 90vw;
+        height: 46rem;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .product-item #product-description
+    {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    main .product-item #product-description p
+    {
+        text-align: justify;
+    }
+
+    main .product-item #img-button
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    main .product-item #img-button img
+    {
+        margin-top: 1rem;
+        margin-left: calc(50% - 5rem);
+    }
+
+    main .product-item #img-button #more-info-button
+    {
+        margin-left: calc(50% - 5rem);
+        margin-bottom: 2rem;
+    }
 }
